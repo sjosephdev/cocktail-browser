@@ -227,6 +227,10 @@ input {
     margin-top: 1.5rem;
   }
 
+  #drinkName {
+    font-size: 3rem;
+  }
+
   img, p {
     vertical-align: middle;
     padding: 1rem;
