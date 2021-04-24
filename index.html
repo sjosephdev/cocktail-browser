@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <meta charset="utf-8">
+  	<meta name="description" content="Calculator">
+  	<meta name="keywords" content="Calculator">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel = "apple-touch-icon" sizes = "180x180" href = "images/s-title-180-180.png">
+		<link rel = "icon" type = "image/png" sizes = "32x32" href = "images/s-title-32-32.png">
+		<link rel = "icon" type = "image/png" sizes = "16x16" href = "images/s-title-16-16.png">
+		<link rel = "mask-icon" href = "images/s-title.png">
+		<link rel = "shortcut icon" href = "images/s-title.png">
+		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<title>Cocktail Browser</title>
+		<!-- external fonts  -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,500;1,300&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<main class="main">
+			<section class="spaceLeft">
+			</section>
+			<section class="cocktailMainSection">
+				<h1>Find a Cocktail</h1>
+				<section class="drinkInfo">
+					<div class="drinkImg">
+						<h2 id="drinkName"></h2>
+						<img id="drinkImg" src="" alt="">
+					</div>
+					<section class="drinkText">
+						<div class="drinkIngredients">
+							<h2 class="drinkIngredientsH2 hidden">INGREDIENTS</h2>
+							<ol id="ingredientList">
+							</ol>
+						</div>
+						<div class="drinkInstructions">
+							<h2 class="drinkInstructionsH2 hidden">INSTRUCTIONS</h2>
+							<p id="drinkInstructions"></p>
+						</div>
+					</section>
+				</section>
+				<input type="text" name="" value="" placeholder="Enter Alcohol Type">
+				<div class="buttonFlex">
+					<button type="button" class="button hidden" id="lastDrink" name="button"><<</button>
+					<button type="button" class="button" id="findADrink" name="button">Find a Drink!</button>
+					<button type="button" class="button hidden" id="nextDrink" name="button">>></button>
+				</div>
+			</section>
+			<section class="spaceRight">
+			</section>
+		</main>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,247 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+
+* {
+  box-sizing: border-box;
+  font-family: 'PT Sans', sans-serif;
+  /* font-family: 'Roboto Mono', monospace; */
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: rgb(209, 212, 219);
+  font-size: 2rem;
+  /* text-align: center; */
+}
+
+h1, h2, h3, h4, h5, h6, ul, ol, li {
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  box-shadow: none;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: gray;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 350px;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+h1, h2, h3, h4, button, input, img, p {
+  margin-bottom: 2rem;
+}
+
+img, p {
+  vertical-align: middle;
+  padding: 1rem;
+  width: 450px;
+}
+
+h1 {
+  font-weight: 700;
+  margin-bottom: 4rem;
+  text-align: center;
+  text-decoration: underline;
+  width: 550px;
+}
+
+img {
+  width: 300px;
+}
+
+input {
+  background-color: lightgray;
+}
+
+.main {
+  display: flex;
+  flex-flow: row nowrap;
+  flex: 2;
+  justify-content: center;
+  touch-action: manipulation;
+}
+
+/* .drinkInfo {
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+} */
+
+.cocktailMainSection,
+.drinkImg,
+.drinkInstructions,
+.drinkInfo {
+  align-items: center;
+  display: flex;
+  flex-flow: column nowrap;
+  touch-action: manipulation;
+}
+
+.drinkText {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex: 4;
+  margin-bottom: 2rem;
+}
+
+.drinkIngredients,
+.drinkInstructions {
+  max-width: 400px;
+  text-align: center;
+}
+
+.drinkInstructions h2 {
+  margin-bottom: 0;
+}
+
+.drinkIngredients ol,
+.drinkIngredients li {
+  list-style: decimal;
+  min-width: 250px;
+  text-align: center;
+}
+
+.drinkIngredients {
+  width: 50%;
+}
+
+.drinkInstructions {
+  width: 50%;
+}
+
+.cocktailMainSection {
+  background: rgb(80, 80, 80);
+  box-shadow: 1px 1px 2px rgb(55, 55, 55);
+  flex: 4;
+  max-width: 900px;
+  padding: 1%;
+}
+
+.buttonFlex {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.buttonFlex button {
+  background: rgb(122, 122, 122);
+  border: 1px solid rgb(80, 80, 80);
+  color: white;
+  font-size: 2rem;
+  /* width: 35%; */
+  padding: 2rem;
+  /* width: 25%; */
+  text-align: center;
+}
+
+.buttonFlex button:active {
+  background: rgb(128, 128, 128);
+  transform: scale(0.9);
+}
+
+.hidden {
+  display: none;
+}
+
+.spaceLeft,
+.spaceRight {
+  flex: 2;
+}
+
+#drinkName {
+  font-size: 5rem;
+}
+
+#drinkInstructions {
+  font-style: italic;
+  padding: 0 6rem 1rem 6rem;
+
+}
+
+#drinkImg {
+  border-radius: 50%;
+}
+
+#findADrink {
+  /* border-radius: 50%; */
+  /* height: 70px; */
+  background: rgb(122, 122, 122);
+  border: 1px solid rgb(80, 80, 80);
+  color: white;
+  font-size: 2rem;
+  /* width: 35%; */
+  padding: 2rem;
+  /* width: 25%; */
+  text-align: center;
+}
+
+#findADrink:active {
+  background: rgb(128, 128, 128);
+  transform: scale(0.9);
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 900px) {
+
+  header {
+    margin-top: 1.5rem;
+  }
+
+  .cocktailMainSection {
+    margin-bottom: 1rem;
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+  }
+
+  .drinkText {
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .drinkIngredients li {
+    text-align: left;
+  }
+
+  .drinkIngredients ol {
+    padding-left: 2rem;
+  }
+
+  .drinkIngredients {
+    margin-bottom: 2rem;
+  }
+
+
+
+  .spaceLeft,
+  .spaceRight {
+    display: none;
+  }
+
+}
