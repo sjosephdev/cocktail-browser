@@ -208,10 +208,6 @@ input {
   transform: scale(0.9);
 }
 
-.footerSection {
-  width: 100%;
-}
-
 .footerSection ul {
   display: flex;
   flex-direction: row;
