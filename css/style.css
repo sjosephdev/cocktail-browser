@@ -230,6 +230,7 @@ input {
 
   .cocktailMainSection {
     margin-bottom: 1rem;
+    max-width: 450px;
     transform: scale(0.8);
     -webkit-transform: scale(0.8);
   }
