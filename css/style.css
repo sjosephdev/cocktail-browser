@@ -69,7 +69,6 @@ h1 {
   margin-bottom: 4rem;
   text-align: center;
   text-decoration: underline;
-  width: 550px;
 }
 
 img {
@@ -83,7 +82,7 @@ input {
 .main {
   display: flex;
   flex-flow: row nowrap;
-  flex: 2;
+  max-width: 900px;
   justify-content: center;
   touch-action: manipulation;
 }
@@ -218,7 +217,7 @@ input {
 .footerSection li {
   margin: 0 2rem;
 }
-}
+
 
 /* Media Queries */
 
@@ -228,11 +227,16 @@ input {
     margin-top: 1.5rem;
   }
 
+  img, p {
+    vertical-align: middle;
+    padding: 1rem;
+    max-width: 350px;
+  }
+
   .cocktailMainSection {
     margin-bottom: 1rem;
-    max-width: 450px;
-    transform: scale(0.8);
-    -webkit-transform: scale(0.8);
+    /* transform: scale(0.8);
+    -webkit-transform: scale(0.8); */
   }
 
   .drinkText {
