@@ -140,7 +140,7 @@ input {
 .cocktailMainSection {
   background: rgb(80, 80, 80);
   box-shadow: 1px 1px 2px rgb(55, 55, 55);
-  flex: 4;
+  flex: 5;
   max-width: 900px;
   padding: 1%;
 }
@@ -181,6 +181,7 @@ input {
 
 #drinkInstructions {
   font-style: italic;
+  margin-right: 5rem;
   padding: 0 6rem 1rem 6rem;
 
 }
@@ -264,4 +265,8 @@ input {
   .spaceLeft,
   .spaceRight {
     display: none;
+  }
+
+  #drinkInstructions {
+    margin-right: 0;
   }
